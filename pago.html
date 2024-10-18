@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Método de Pago y Dirección de Envío</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Agregar Método de Pago y Dirección de Envío</h1>
+
+		<form id="paymentForm">
+			<!-- Sección de Dirección de Envío -->
+			<h2>Dirección de Envío</h2>
+			<label for="nombre">Nombre Completo:</label>
+			<input type="text" id="nombre" name="nombre" required /><br />
+
+			<label for="direccion">Dirección:</label>
+			<input type="text" id="direccion" name="direccion" required /><br />
+
+			<label for="ciudad">Ciudad:</label>
+			<input type="text" id="ciudad" name="ciudad" required /><br />
+
+			<label for="estado">Estado/Provincia:</label>
+			<input type="text" id="estado" name="estado" required /><br />
+
+			<label for="codigoPostal">Código Postal:</label>
+			<input type="text" id="codigoPostal" name="codigoPostal" required /><br />
+
+			<!-- Sección de Método de Pago -->
+			<h2>Método de Pago</h2>
+			<label for="tarjeta">Número de Tarjeta:</label>
+			<input type="text" id="tarjeta" name="tarjeta" required /><br />
+
+			<label for="expiracion">Fecha de Expiración (MM/AA):</label>
+			<input type="text" id="expiracion" name="expiracion" required /><br />
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" required /><br />
+
+			<!-- Botón de Enviar -->
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
